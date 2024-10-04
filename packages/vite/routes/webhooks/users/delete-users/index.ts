@@ -4,7 +4,8 @@ export default async function handler(request: Request) {
   //   return new Response(null, { status: 405 })
   // }
   // send inngest event here
-  return new Response(null, {
+  console.log('conf => ', config)
+  return new Response(JSON.stringify(config), {
     status: 200,
   });
 }

@@ -2,6 +2,7 @@
   "name": "@elba/saas",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "dev:vercel": "vercel dev",
@@ -12,11 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "@elba/vite": "workspace:*",
-    "@hono/vite-dev-server": "^0.16.0",
-    "@types/node": "^22.7.4",
-    "hono": "^4.6.3",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.8",
-    "vite-plugin-vercel": "^9.0.2"
+    "vite": "^5.4.8"
   }
 }

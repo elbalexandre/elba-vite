@@ -1,9 +1,4 @@
 {
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "moduleResolution": "nodenext",
-    "module": "NodeNext"
-  },
   "include": ["/**/*.ts", "vite.config.mts"],
   "exclude": ["node_modules"]
 }
