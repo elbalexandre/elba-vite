@@ -14,7 +14,7 @@ const formatEndpointSource = (filePath) => {
     path.join(rootDir, path.dirname(filePath)),
     configPath,
   ).replace('.ts', '')
-  const importConfigStatement = `import { config } from '${configImportPath}';\n`
+  const importConfigStatement = `import { config } from '${configImportPath}';\nglobalThis.config = config;\n`
   const fileContent = readFileSync(path.join(rootDir, 'routes/webhooks/users/delete-users/index.ts')).toString()
 
   return {
