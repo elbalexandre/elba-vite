@@ -4,6 +4,6 @@
     "moduleResolution": "nodenext",
     "module": "NodeNext"
   },
-  "include": ["/**/*.ts", "*.mts", "../../packages/vite-config/vite-config.mts"],
+  "include": ["/**/*.ts", "vite.config.mts"],
   "exclude": ["node_modules"]
 }
