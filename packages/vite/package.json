@@ -1,0 +1,26 @@
+{
+  "name": "@elba/vite",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    "./vite-config": {
+      "types": "./vite-config/index.d.ts",
+      "default": "./vite-config/index.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@hono/vite-dev-server": "^0.16.0",
+    "@types/node": "^22.7.4",
+    "hono": "^4.6.3",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vite-plugin-vercel": "^9.0.2"
+  }
+}
