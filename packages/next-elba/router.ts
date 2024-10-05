@@ -10,15 +10,15 @@ type HTTPMethod = 'GET' | 'POST' | 'DELETE'
 
 const routes: Record<`${HTTPMethod} ${string}`, Route> = {
   'GET /api/hello': hello,
-  'GET /api/webhooks/elba/users/delete-users': deleteUsers
+  'POST /api/webhooks/elba/users/delete-users': deleteUsers
 }
 
 const handler = (request: NextRequest, config: ElbaConfig) => {
-  const method = request.method as HTTPMethod
-  const { pathname } = request.nextUrl
-
   const inngest = createInngest(config)
   const context = { config, inngest }
+
+  const method = request.method as HTTPMethod
+  const { pathname } = request.nextUrl
 
   if (pathname === '/api/inngest') {
     const inngestRoutes = createInngestRoutes(context)
