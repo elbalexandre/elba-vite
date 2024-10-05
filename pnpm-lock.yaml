@@ -10,6 +10,9 @@ importers:
 
   apps/next:
     dependencies:
+      '@elba/next-elba':
+        specifier: workspace:*
+        version: link:../../packages/next-elba
       next:
         specifier: 14.2.14
         version: 14.2.14(react-dom@18.3.1)(react@18.3.1)
@@ -53,6 +56,16 @@ importers:
       vite:
         specifier: ^5.4.8
         version: 5.4.8(@types/node@22.7.4)
+
+  packages/next-elba:
+    dependencies:
+      next:
+        specifier: 14.2.14
+        version: 14.2.14(react-dom@18.3.1)(react@18.3.1)
+    devDependencies:
+      '@types/node':
+        specifier: ^22.7.4
+        version: 22.7.4
 
   packages/sdk:
     dependencies:

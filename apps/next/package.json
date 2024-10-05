@@ -1,7 +1,6 @@
 {
   "name": "next",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@elba/next-elba": "workspace:*",
     "react": "^18",
     "react-dom": "^18",
     "next": "14.2.14"
