@@ -4,7 +4,7 @@ export const config: ElbaConfig = {
   name: 'my-saas',
   features: {
     users: {
-      revokable: true,
+      deleteUsers: () => Promise.resolve(),
       getUsersPage: () => Promise.resolve({ users: [], nextCursor: null })
     }
   }

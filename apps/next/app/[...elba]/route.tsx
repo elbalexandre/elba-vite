@@ -1,5 +1,5 @@
 import { config } from '@/config'
-import {elba } from '@elba/next-elba/elba'
+import { elba } from '@elba/next-elba/router'
 
 export const runtime = 'edge'
 
