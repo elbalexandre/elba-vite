@@ -1,4 +1,4 @@
 
 export const runtime = 'edge'
 
-export const GET = () => new Response('hello')
+export const GET = () => new Response('hello world')
