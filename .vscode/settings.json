@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "apps/*/node_modules/": true,
+    "apps/*/.next": true,
+    "apps/*/next-env.d.ts": true
+  }
+}

@@ -26,6 +26,12 @@ const schemas = new EventSchemas().fromRecord<{
       userId: string;
     };
   };
+  'token.refresh.requested': {
+    data: {
+      organisationId: string,
+      expiresAt: string
+    }
+  }
 }>()
 
 export type ElbaInngest = Inngest<{ id: string, schemas: AddSchemasPrefix<typeof schemas> }>
